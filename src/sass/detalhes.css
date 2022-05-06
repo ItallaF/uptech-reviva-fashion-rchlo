@@ -1,0 +1,526 @@
+html, body {
+  background-color: #ffffff;
+  font-family: Helvetica, sans-serif;
+  margin: 0%;
+  padding: 0%;
+  font-size: 62.5%;
+  color: #000000;
+}
+
+/*Header*/
+.cabecalho {
+  width: 90%;
+  height: 5%;
+  margin: 0 0 0 4%;
+  top: 11%;
+  background: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cabecalho .cabecalho__logo {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+}
+
+.cabecalho .cabecalho__logo .logo__titulo {
+  font-family: Helvetica, sans-serif;
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.cabecalho .cabecalho__logo .logo__texto {
+  font-family: Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2em;
+  -ms-grid-column-align: end;
+      justify-self: end;
+  margin-top: -13%;
+}
+
+.cabecalho .cabecalho__vetor {
+  margin: 0 5% 0 0;
+}
+
+/*Menu*/
+.menu {
+  width: 100%;
+  height: 10vh;
+  left: 0px;
+  top: 23%;
+  background: #000000;
+}
+
+.menu .menu__lista {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.menu .menu__lista .menu__item {
+  font-weight: 400;
+  font-size: 2.8em;
+  line-height: 10vh;
+  top: 4vh;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.menu .menu__lista .menu__item .menu__link {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+/*Form*/
+.formulario {
+  display: -ms-grid;
+  display: grid;
+}
+
+.formulario .pesquisar {
+  width: 85%;
+  height: 128%;
+  margin: 1% 0 0 4%;
+  top: 40%;
+  font-size: 2.5em;
+  border: 1px solid #C4C4C4;
+}
+
+.formulario .botao__pesquisa {
+  width: 6%;
+  height: 130%;
+  margin: -1.6% 0 0 91%;
+  background: #000000;
+}
+
+.formulario .botao__pesquisa svg {
+  top: 0%;
+  bottom: -0.01%;
+  -webkit-transform: matrix(-1, 0, 0, 1, 0, 0);
+          transform: matrix(-1, 0, 0, 1, 0, 0);
+  color: #ffffff;
+}
+
+.detalhes__produto {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  width: 90%;
+  height: 504px;
+  margin: 2% 4%;
+}
+
+.detalhes__produto .detalhes__imagem {
+  width: 80%;
+  height: 90%;
+  border: 1px solid #C4C4C4;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.detalhes__produto .detalhes__imagem .detalhes__imagem__destaque {
+  width: 95%;
+  height: 95%;
+  margin: 2%;
+}
+
+.detalhes__produto .detalhes__conteudo {
+  width: 100%;
+}
+
+.detalhes__produto .detalhes__conteudo .detalhes__titulo {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2rem;
+  color: #000000;
+}
+
+.detalhes__produto .detalhes__conteudo .detalhes__descericao {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2em;
+  line-height: 160%;
+  color: #000000;
+}
+
+.detalhes__produto .detlahes__descricao__imagens {
+  width: 100%;
+  margin: 5% 0 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.detalhes__produto .detlahes__descricao__imagens .detalhes__imagem__borda {
+  width: 24%;
+  height: 15%;
+  padding: 1%;
+  border: 1px solid #C4C4C4;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.detalhes__produto .detlahes__descricao__imagens .detalhes__imagem__borda .detalhes__imagem__descricao {
+  width: 100%;
+  height: 100%;
+}
+
+.detalhes__produto .imagem__botao {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 100%;
+  margin: 10% 0 0 0;
+}
+
+.detalhes__produto .imagem__botao .botao__tamanho {
+  width: 5%;
+  height: 2.3vw;
+  top: 10px;
+  -ms-grid-column: 1;
+  grid-column: 1;
+  margin: 1%;
+  border: 1px solid #000000;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.detalhes__produto .botao__compra {
+  width: 40%;
+  height: 3vw;
+  font-weight: bold;
+  font-size: 1.7rem;
+  line-height: 6vh;
+  color: #ffffff;
+  background: #000000;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -ms-grid;
+  display: grid;
+}
+
+.detalhes__produto .botao__compra .iamgem__svg {
+  margin-top: -40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.banner {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 31%;
+  width: 90%;
+  height: 10vw;
+  margin: 5% 0 0 4%;
+  background: #000000;
+}
+
+.banner__conteudo {
+  grid-column: 1 / -1;
+}
+
+.banner__conteudo .banner__conteudo__texto {
+  text-align: center;
+  font-weight: 400;
+  font-size: 2rem;
+  margin: 5% 0 0 0;
+  color: #ffffff;
+}
+
+.banner__conteudo .banner__conteudo__titulo {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  margin: .3% 0 0 0;
+  font-weight: 400;
+  font-size: 2.5rem;
+  line-height: 4vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #ffffff;
+}
+
+.banner__logo {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-column: 2 / span 2;
+}
+
+.banner__logo .logo__titulo {
+  font-family: Helvetica, sans-serif;
+  font-size: 3rem;
+  font-weight: 400;
+  text-align: end;
+  color: #ffffff;
+  line-height: 1vh;
+  margin: 7% 0 0 0;
+}
+
+.banner__logo .logo__texto {
+  text-align: end;
+  font-family: Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2em;
+  color: #ffffff;
+}
+
+.sugestao__compra {
+  margin: 0 0 0 4%;
+  width: 90%;
+}
+
+.sugestao__compra__titulo {
+  color: #000000;
+  font-size: 2.1rem;
+  font-weight: bold;
+  font-style: normal;
+  line-height: 2%;
+}
+
+.sugestao__compra__conteudo {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  gap: 10em;
+  max-width: 95%;
+}
+
+.sugestao__compra__imagem {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 2%;
+          flex: 1 1 2%;
+}
+
+.sugestao__compra__imagem__borda {
+  border: 1px solid #C4C4C4;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -ms-grid;
+  display: grid;
+  width: 105%;
+  height: 300px;
+}
+
+.sugestao__compra__imagem__tamanhos {
+  height: 208px;
+  margin: 2%;
+  width: 249px;
+}
+
+.sugestao__compra__imagem__botao {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 100%;
+}
+
+.botao__tamanho {
+  border: 1px solid #000000;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -ms-grid-column: 1;
+  grid-column: 1;
+  height: 2.3vw;
+  margin: 1%;
+  width: 10%;
+}
+
+.sugestao__compra__texto {
+  font-weight: 400;
+  font-size: 2.9em;
+  height: 8%;
+  text-align: start;
+  width: 100%;
+}
+
+.sugestao__compra__preco {
+  color: #666666;
+  font-weight: bold;
+  font-size: 4em;
+  line-height: 0%;
+  text-align: start;
+  width: 100%;
+  margin-top: -9%;
+}
+
+.sugestao__compra__botao__compra {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #000000;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 1.7rem;
+  display: -ms-grid;
+  display: grid;
+  height: 3vw;
+  line-height: 6vh;
+  width: 100%;
+}
+
+.sugestao__compra__botao__svg {
+  margin-top: -35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.rodape {
+  background: #000000;
+  margin-top: 5%;
+  height: 20%;
+  width: 100%;
+}
+
+.rodape p a {
+  color: #ffffff;
+}
+
+.rodape__logo {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  display: -ms-grid;
+  display: grid;
+}
+
+.rodape__logo .logo__titulo {
+  color: #ffffff;
+  font-family: Helvetica, sans-serif;
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: 90%;
+  margin: 1% 0 0 4%;
+}
+
+.rodape__logo .logo__texto {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2em;
+  margin: 0 0 0 15%;
+}
+
+.conteudo__rodape {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 100%;
+  margin: 0 4% 0 4%;
+}
+
+h4 {
+  color: #ffffff;
+  line-height: 1.5rem;
+  font-weight: bold;
+  font-size: 2.2em;
+}
+
+.rodape__itens__menu {
+  font-weight: normal;
+  font-size: 1.8em;
+  line-height: 197%;
+}
+
+.rodape__itens__menu a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.rodape__link__redeSociais {
+  text-align: center;
+  margin-top: 1%;
+}
+
+.contato {
+  color: #ffffff;
+  line-height: 197%;
+  font-weight: normal;
+  font-size: 1.8em;
+}
+
+.contato svg {
+  height: 15%;
+  margin-left: 7%;
+  width: 15%;
+}
+
+.newsletter {
+  width: 25%;
+}
+
+.rodape__newsletter {
+  background: #ffffff;
+  border: 1px solid #C4C4C4;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 3.5vh;
+  width: 50%;
+}
+
+.newletter__botao {
+  background: #C4C4C4;
+  height: 4vh;
+  width: 25%;
+}
+/*# sourceMappingURL=detalhes.css.map */
