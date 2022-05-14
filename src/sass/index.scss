@@ -1,8 +1,8 @@
-@import './abstract/base';
+@import '/src/sass/abstract/base';
 @import './components/header';
 @import './components/navbar';
 @import './components/form';
-@import './components/detalhe_produto';
+@import './components/produto_lista';
 @import './components/banner';
-@import './components/sugestao_compra';
+@import './components/blog';
 @import './components/rodape';

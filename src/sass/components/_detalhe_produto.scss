@@ -4,96 +4,111 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 
-    width: 90%;
-    height: 504px;
     margin: 2% 4%;
-    
-
-    .detalhes__imagem {
-        width: 80%;
-        height: 90%;
-        
-        border: 1px solid $color-border;
-        box-sizing: border-box;
-        .detalhes__imagem__destaque {
-            width: 95%;
-            height: 95%;
-            margin: 2%;
-        }
+    width: 90%;
+    @media screen and (max-width: 576px){
+        grid-template-columns: 1fr;
     }
-    .detalhes__conteudo {
-        width: 100%;
-             
+    @media screen and (min-width: 577px) and (max-width: 768px){
+        grid-template-columns: 1fr;
+    }  
+}
 
-        .detalhes__titulo {
-            font-style: normal;
-            font-weight: 700;
-            font-size: 2rem;
-            color: $color_text;
-        }
-        .detalhes__descericao {
-            font-style: normal;
-            font-weight: 400;
-            font-size: 2em;
-            line-height: 160%;
-            color: $color_text;
-        }
-    }
-    .detlahes__descricao__imagens {
-        width: 100%;
-        margin: 5% 0 0 0;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: flex-start;
-        
-        .detalhes__imagem__borda {
-            width: 24%;
-            height: 15%;
-            padding: 1%;           
-            
-            border: 1px solid $color-border;
-            box-sizing: border-box;
-            .detalhes__imagem__descricao {
-                width: 100%;
-                height: 100%;
-                
-            }
-        }
-    }
-    .imagem__botao {
-        display: flex;        
-        align-items: flex-start;
-        width: 100%;
-        margin: 10% 0 0 0;
+.detalhes__produto__imagem {
+    @include border__img;
 
-        .botao__tamanho {
-            width: 5%;
-            height: 2.3vw;
-            top: 10px;
+    height: 79vh;
+    width: 37vw;
+    margin: 0%; 
+    @media screen and (max-width: 576px){
+        width: 86vw;
+    }
+    @media screen and (min-width: 577px) and (max-width: 768px){
+        height: 87vh;
+        width: 86vw;
+    }       
+}
+.detalhes__produto__imagem__destaque {
+    height: 95%;
+    margin: 2%;
+    width: 95%;
+}
+
+.detalhes__produto__conteudo {
+    width: 100%;
+    .detalhes__produto__conteudo__titulo {
+        color: $color_text;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 2rem;
+    }
+}
+
+.detalhes__produto__conteudo__descericao {
+    color: $color_text;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2em;
+    line-height: 160%;
+}
+.detalhes__descricao__imagens {
+    align-items: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 5% 0 0 0;
+    width: 100%;
+}
+
+.detalhes__imagem__borda {
+    @include border__img;
+    height: 25vh;
+    padding: 1%;
+    width: 10vw;
+    margin: 0%;
+    @media screen and (max-width: 576px){
+        height: 37vh;
+        width: 43vw;
+        margin: .2%;
+    }
+    @media screen and (min-width: 577px) and (max-width: 768px){
+        height: 28vh;
+        width: 21vw;
+        margin: .2%;
+    } 
+}
+
+.detalhes__imagem__descricao {
+    height: 100%;
+    @extend .detalhes__produto__conteudo;
+}
+
+.imagem__botao {
+    align-items: flex-start;
+    display: flex;        
+    margin: 10% 0 0 0;
+    @extend .detalhes__produto__conteudo;
+        .imagem__botao__tamanho {
+            @include border__tamanho;
+            height: 5vh;
             grid-column: 1;
             margin:  1%;
-
-            border: 1px solid $color-text;
-            box-sizing: border-box;
+            top: 10vw;
+            width: 2.3vw;
+            @media screen and (max-width: 576px){
+                height: 5vh;
+                width: 5vw;
+            }
+            @media screen and (min-width: 577px) and (max-width: 768px){
+                height: 5vh;
+                width: 5vw;
+            }
         }
-    }
-    .botao__compra{
-           
-        width: 40%;
-        height: 3vw;
-        font-weight: bold;
-        font-size: 1.7rem;
-        line-height: 6vh;
-        color: $color-text-destaque;
-        background: $color-background-destaque;
-	    align-items: center;
-        display: grid; 
-        
-        .iamgem__svg {
-            margin-top: -40px;
-            display: flex;    
-            justify-content: flex-end;
-        }
-    }
+}
+.botao__compra{
+    @include button__sacola;
+    width: 50%;
+}    
+.botao__iamgem__svg {
+    @include button__svg__sacola;
 }
