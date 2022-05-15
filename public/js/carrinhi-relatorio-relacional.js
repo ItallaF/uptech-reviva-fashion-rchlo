@@ -4,9 +4,27 @@ const precos = [29.90, 49.90, 35, 89.99, 29.90, 109.99, 29.90];
 
 var contadorCamisetaB = 0;
 
+var contadorCamisetaB = 0;
+var contadorCamisetaP = 0;
+var bermudaM = 0;
+var calcaM = 0;
+var calcaF = 0;
+
 for(indice = 0; indice < produtos.length; indice++){
     if(produtos[indice] === 'Camiseta Básica'){
         contadorCamisetaB ++;
+    }
+    else if(produtos[indice] === 'Camiseta Polo'){
+        contadorCamisetaP ++;
+    }
+    else if(produtos[indice] === 'Bermuda Moletom'){
+        bermudaM ++;
+    }
+    else if(produtos[indice] === 'Calça Jeans Masculina'){
+        calcaM ++;
+    }
+    else if(produtos[indice] === 'Calça Jeans Feminina'){
+        calcaF ++;
     }
 }
 
@@ -36,20 +54,12 @@ const valorProduto = valoresproduto.map((valorItem, indiceAtual) => {
 })
 
 
-produtoDescricao.splice(5,0, valorProdutoItem.toString());
+produtoDescricao.splice(5,0, valorProdutoItem.toString().replace(".", ","));
 
 console.log(produtoDescricao)
 
 //__________________________________________________________CAMISA POLO____________________________________
 
-
-var contadorCamisetaP = 0;
-
-for(indice = 0; indice < produtos.length; indice++){
-    if(produtos[indice] === 'Camiseta Polo'){
-        contadorCamisetaP ++;
-    }
-}
 
 var produto2Descricao  = [];
 
@@ -69,19 +79,11 @@ produto2Descricao.splice(2,0, 'Quantidade:',contadorCamisetaP, 'Valor Unitário:
 
 const valoresproduto2 = precos.filter((_, indice) => produtos[indice] === 'Camiseta Polo');
 
-produto2Descricao.splice(5,0, valoresproduto2.toString());
+produto2Descricao.splice(5,0, valoresproduto2.toString().replace(".", ","));
 
 console.log(produto2Descricao)
 
 //__________________________________________________________Bermuda Moletom____________________________________
-
-var bermudaM = 0;
-
-for(indice = 0; indice < produtos.length; indice++){
-    if(produtos[indice] === 'Bermuda Moletom'){
-        bermudaM ++;
-    }
-}
 
 var produto3Descricao  = [];
 
@@ -101,20 +103,12 @@ produto3Descricao.splice(2,0, 'Quantidade:',bermudaM, 'Valor Unitário:');
 
 const valoresproduto3 = precos.filter((_, indice) => produtos[indice] === 'Bermuda Moletom');
 
-produto3Descricao.splice(5,0, valoresproduto3.toString());
+produto3Descricao.splice(5,0, valoresproduto3.toString().replace(".", ","));
 
 console.log(produto3Descricao)
 
 
 //__________________________________________________________Calça Jeans Masculina____________________________________
-
-var calcaM = 0;
-
-for(indice = 0; indice < produtos.length; indice++){
-    if(produtos[indice] === 'Calça Jeans Masculina'){
-        calcaM ++;
-    }
-}
 
 var produto4Descricao  = [];
 
@@ -134,19 +128,11 @@ produto4Descricao.splice(2,0, 'Quantidade:',calcaM, 'Valor Unitário:');
 
 const valoresproduto4 = precos.filter((_, indice) => produtos[indice] === 'Calça Jeans Masculina');
 
-produto4Descricao.splice(5,0, valoresproduto4.toString());
+produto4Descricao.splice(5,0, valoresproduto4.toString().replace(".", ","));
 
 console.log(produto4Descricao)
 
 //__________________________________________________________Calça Jeans Feminina____________________________________
-
-var calcaF = 0;
-
-for(indice = 0; indice < produtos.length; indice++){
-    if(produtos[indice] === 'Calça Jeans Feminina'){
-        calcaF ++;
-    }
-}
 
 var produto5Descricao  = [];
 
@@ -166,6 +152,6 @@ produto5Descricao.splice(2,0, 'Quantidade:',calcaF, 'Valor Unitário:');
 
 const valoresproduto5 = precos.filter((_, indice) => produtos[indice] === 'Calça Jeans Feminina');
 
-produto5Descricao.splice(5,0, valoresproduto4.toString());
+produto5Descricao.splice(5,0, valoresproduto4.toString().replace(".", ","));
 
 console.log(produto5Descricao)
