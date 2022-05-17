@@ -164,8 +164,12 @@ a:hover,
 }
 
 .formulario {
-  display: -ms-grid;
-  display: grid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 0 0 0 4%;
 }
 
 .formulario__pesquisar {
@@ -276,11 +280,11 @@ a:hover,
   width: 95%;
 }
 
-.detalhes__produto__conteudo, .detalhes__descricao__imagens, .detalhes__imagem__descricao, .imagem__botao {
+.detalhes__produto__conteudo, .detalhes__imagem__descricao, .imagem__botao {
   width: 100%;
 }
 
-.detalhes__produto__conteudo .detalhes__produto__conteudo__titulo, .detalhes__descricao__imagens .detalhes__produto__conteudo__titulo, .detalhes__imagem__descricao .detalhes__produto__conteudo__titulo, .imagem__botao .detalhes__produto__conteudo__titulo {
+.detalhes__produto__conteudo .detalhes__produto__conteudo__titulo, .detalhes__imagem__descricao .detalhes__produto__conteudo__titulo, .imagem__botao .detalhes__produto__conteudo__titulo {
   color: #000000;
   font-style: normal;
   font-weight: 700;
@@ -308,6 +312,7 @@ a:hover,
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin: 5% 0 0 0;
+  width: 100%;
 }
 
 .detalhes__imagem__borda {

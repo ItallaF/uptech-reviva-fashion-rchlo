@@ -25,4 +25,3 @@ if (totalCompra > 500){
   totalCompra = totalCompra - 50.00;
 }
 console.log(`Os produtos escolhidos são : ${carrinho} e o total da compra será ${totalCompra}`)
-/*AINDA SEM TERMINAR*/
