@@ -1,22 +1,20 @@
 const carrinho = [25.99, 27.83, 35.80, 35.80, 35.80, 44, 53.90, 25.99];
 
-const carrinhoOrdenado = carrinho.sort();
+console.log(carrinho)
 
-const valorDesconto = [];
+const valor_desconto = [];
 
-const resultado = carrinhoOrdenado.map(function(Valor, indice, array){
-    if(Valor === array[indice-1] && !valorDesconto.includes(Valor)){
-        valorDesconto.push(Valor)
-        return Valor * 0.9
+const carrinho_ordenado = carrinho.sort()
+.map(function(valor, indice, array){
+    if(valor === array[indice-1] && !valor_desconto.includes(valor)){
+        valor_desconto.push(valor)
+        return valor * 0.9
     }
-    return Valor
+    return valor
 })
+.reduce((somatorio, valor_atual) => somatorio + valor_atual , 0)
 
-console.log(resultado)
-
-const total_produtos_descontos = resultado.reduce((acum, atual) => atual + acum, 0)
-
-console.log(`Total da compra com descontos: ${total_produtos_descontos}`)
+console.log(`Total da compra com descontos: ${carrinho_ordenado}`)
 
 
 

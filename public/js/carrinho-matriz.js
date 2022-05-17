@@ -6,14 +6,22 @@ const carrinho = [
     ['Calça Jeans Feminina', 1, 150.00]
   ]
 
-var produtosRepetidos = [];
 
-for(indice = 0; indice < carrinho.length; indice++){
-    if(carrinho[indice] === 'Saia Feminina'){
-        
+var totalCompra = 0;
+for(let indice = 0; indice < carrinho.length; indice++){
+    for(let indiceConteudo = 0; indiceConteudo < carrinho[indice][1]; indiceConteudo++){
+        if(carrinho[indice][1] >= 2){
+          (carrinho[indice][2] * 0.05) - carrinho[indice][2];
+        }
+        else if (carrinho[indice][0] === 'Calça Jeans Masculina' || carrinho[indice][0] === 'Calça Jeans Feminina'){
+          (carrinho[indice][2] * 0.015) + carrinho[indice][2];
+        }
+        totalCompra += carrinho[indice][2];
     }
 }
 
-console.log(produtosRepetidos)
 
-/*AINDA SEM TERMINAR*/
+if (totalCompra > 500){
+  totalCompra = totalCompra - 50.00;
+}
+console.log(`Os produtos escolhidos são : ${carrinho} e o total da compra será ${totalCompra}`)

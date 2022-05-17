@@ -164,8 +164,12 @@ a:hover,
 }
 
 .formulario {
-  display: -ms-grid;
-  display: grid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 0 0 0 4%;
 }
 
 .formulario__pesquisar {
@@ -291,12 +295,6 @@ a:hover,
   .minha__sacola__produto__titulo, .minha__sacola__produto__descericao, .minha__sacola__total__conteudo {
     font-size: 2.8em;
     text-align: center;
-  }
-}
-
-@media screen and (min-width: 577px) and (max-width: 768px) {
-  .minha__sacola__produto__titulo, .minha__sacola__produto__descericao, .minha__sacola__total__conteudo {
-    line-height: 7vh;
   }
 }
 
