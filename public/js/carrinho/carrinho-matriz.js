@@ -6,18 +6,19 @@ const carrinho = [
     ['Calça Jeans Feminina', 1, 150.00]
   ]
 
-
+let indice = 0; 
 var totalCompra = 0;
+carrinho[indice][2]++;
+console.log()
 for(let indice = 0; indice < carrinho.length; indice++){
-    for(let indiceConteudo = 0; indiceConteudo < carrinho[indice][1]; indiceConteudo++){
+    for(let indiceConteudo = 0; indiceConteudo < carrinho[indice][1]; indiceConteudo++)
         if(carrinho[indice][1] >= 2){
           (carrinho[indice][2] * 0.05) - carrinho[indice][2];
         }
-        else if (carrinho[indice][0] === 'Calça Jeans Masculina' || carrinho[indice][0] === 'Calça Jeans Feminina'){
+        else if (carrinho[indice][0].includes('Jeans')){
           (carrinho[indice][2] * 0.015) + carrinho[indice][2];
         }
         totalCompra += carrinho[indice][2];
-    }
 }
 
 
