@@ -48,6 +48,10 @@ $color-background-button: #1C7947;
         height: 8vh;
         line-height: 8vh;
     }
+    @media screen and (min-width: 769px) and (max-width: 992px){
+        height: 8vh;
+        line-height: 8vh;
+    }
 }
 @mixin button__svg__sacola {
     place-self: end;

@@ -17,7 +17,7 @@
 .detalhes__produto__imagem {
     @include border__img;
 
-    height: 79vh;
+    height: 96vh;
     width: 37vw;
     margin: 0%; 
     @media screen and (max-width: 576px){
@@ -93,7 +93,6 @@
             height: 5vh;
             grid-column: 1;
             margin:  1%;
-            top: 10vw;
             width: 2.3vw;
             @media screen and (max-width: 576px){
                 height: 5vh;
@@ -103,11 +102,17 @@
                 height: 5vh;
                 width: 5vw;
             }
+            @media screen and (min-width: 769px) and (max-width: 992px){
+                width: 3.3vw;
+            }
         }
 }
 .botao__compra{
     @include button__sacola;
     width: 50%;
+    @media screen and (min-width: 769px) and (max-width: 992px){
+        width: 24vw;
+    }
 }    
 .botao__iamgem__svg {
     @include button__svg__sacola;

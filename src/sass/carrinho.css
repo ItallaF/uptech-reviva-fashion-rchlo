@@ -164,27 +164,30 @@ a:hover,
 }
 
 .formulario {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  margin: 0 0 0 4%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr auto;
+      grid-template-columns: 1fr auto;
+  gap: 2rem;
+  margin: 2% 0 0 4%;
+}
+
+@media screen and (max-width: 576px) {
+  .formulario {
+    gap: 0rem;
+  }
 }
 
 .formulario__pesquisar {
   border: 1px solid #C4C4C4;
-  font-size: 2.5em;
-  height: 128%;
-  margin: 1% 0 0 4%;
-  top: 40%;
-  width: 85%;
+  margin-right: 8px;
+  width: 85vw;
 }
 
 @media screen and (max-width: 576px) {
   .formulario__pesquisar {
     height: 8vh;
-    width: 70%;
+    width: 78vw;
     font-size: 2.3em;
   }
 }
@@ -192,7 +195,7 @@ a:hover,
 @media screen and (min-width: 577px) and (max-width: 768px) {
   .formulario__pesquisar {
     height: 8vh;
-    width: 80%;
+    width: 78vw;
   }
 }
 
@@ -200,9 +203,7 @@ a:hover,
   border: 1px solid #C4C4C4;
   border-radius: 1vh;
   background: #000000;
-  height: 130%;
-  margin: -1.6% 0 0 91%;
-  width: 6%;
+  width: 7vw;
 }
 
 .formulario__botao__pesquisa svg {
@@ -216,8 +217,6 @@ a:hover,
 @media screen and (max-width: 576px) {
   .formulario__botao__pesquisa {
     height: 8vh;
-    margin: 0 0 0 75%;
-    margin-top: -10%;
     width: 15vw;
   }
 }
@@ -225,8 +224,6 @@ a:hover,
 @media screen and (min-width: 577px) and (max-width: 768px) {
   .formulario__botao__pesquisa {
     height: 8vh;
-    margin: 0 0 0 85%;
-    margin-top: -8%;
     width: 13vw;
   }
 }
@@ -484,6 +481,13 @@ a:hover,
 }
 
 @media screen and (min-width: 577px) and (max-width: 768px) {
+  .minha__sacola__botao__total__pagamento {
+    height: 8vh;
+    line-height: 8vh;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
   .minha__sacola__botao__total__pagamento {
     height: 8vh;
     line-height: 8vh;
