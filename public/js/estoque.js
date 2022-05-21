@@ -115,70 +115,16 @@ estoque.map((chave__produto) => localStorage.setItem(chave__produto.id, JSON.str
 
 const lista_botoes = document.querySelectorAll('.produto__lista__botao__sacola');
 
-for (let contador = 0; contador < lista_botoes.length; contador++) {
-  const botao = lista_botoes[contador].id;
-  
-  const comprar__produto = botao.classList;
-  
-  console.log(comprar__produto);
-}
 
-/*
 [...lista_botoes].map((value, index) => {
   value.addEventListener('click', (event) => {
-    produtos = JSON.parse(localStorage.getItem(value.id));
-    console.log(produtos)
+    const produtos = JSON.parse(localStorage.getItem(estoque[index].id));
     if(produtos.quantidade_disponiveis <= 0){
       console.log('Produto Indiponível')
     } else {
-      const quantidade_produtos = JSON.parse(localStorage.getItem(value.id));
-      const quantidade_atual = quantidade_produtos.quantidade_disponiveis - 1;
+      const quantidade_atual = produtos.quantidade_disponiveis - 1;
       estoque[index].quantidade_disponiveis = quantidade_atual;
-      localStorage.setItem(chave__produto.id, JSON.stringify(estoque[index]))
-      console.log(produtos);
+      localStorage.setItem(estoque[index].id, JSON.stringify(estoque[index]))
     }
   })
 })
-
-
-
-
-
-
-
-
-
-/*
-
-
-for(indice = 0; indice < estoque.length; indice++){
-  let cod = estoque[indice].id;
-  
-}
-
-function atualiza_estoque(estoque){
-  estoque.forEach(id => {
-    if(estoque[0].id === estoque[0].id){
-      const quantidade_atual = id.quantidade_disponiveis - 1;
-      
-      console.log(quantidade_atual);
-    }
-  });
-}
-
-function botao_comprar(){  
-  atualiza_estoque(estoque)
-  //alert('clicado');
-}
-document.querySelector('#botao__produto1').onclick = botao_comprar;
-
-/*
-function atualiza_estoque(produtos) {
-  document.querySelector("[data-id='"+produtos[contador].quantidade_disponiveis+"']").innerHTML = produtos
-}
-
-
-for (let contador = 0; contador < produtos.length; contador++) {
-  console.log(produtos[contador].quantidade_disponiveis);
-}
-*/
