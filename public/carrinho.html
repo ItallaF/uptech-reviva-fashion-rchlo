@@ -55,9 +55,18 @@
                         Tamanho escolhido
                     </h3>
                     <div class="minha__sacola__imagem__botao">
-                        <input class="minha__sacola__botao__tamanho" type="radio" name="tamanho" value="P">P</input>
-                        <input class="minha__sacola__botao__tamanho" type="radio" name="tamanho" value="M">M</input>
-                        <input class="minha__sacola__botao__tamanho" type="radio" name="tamanho" value="G">G</input>
+                        <label class="minha__sacola__imagem__botao__input">
+                            <input class="minha__sacola__botao__tamanho" type="radio" name="tamanho" value="P">
+                            <span class="minha__sacola__botao__span">P</span>
+                        </label>
+                        <label class="minha__sacola__imagem__botao__input">
+                            <input class="minha__sacola__botao__tamanho" type="radio" name="tamanho" value="M">
+                            <span class="minha__sacola__botao__span">M</span>
+                        </label>
+                        <label class="minha__sacola__imagem__botao__input">
+                            <input class="minha__sacola__botao__tamanho" type="radio" name="tamanho" value="G">
+                            <span class="minha__sacola__botao__span">G</span>
+                        </label>
                     </div>
                 </div>
                 <div class="minha__sacola__valor__produto">
@@ -67,11 +76,13 @@
                     <P class="minha__sacola__produto__preco">R$ 39,99</p>
                 </div>
                 <div class="minha__sacola__quantidade__produto">
-                    <h3 class="minha__sacola__produto__titulo">
+                    <h3 class="minha__sacola__produto__titulo" for="quant">
                         Quantidade
                     </h3>
                     <div class="minha__sacola__botao__quantidade">
-                        <button type="radio" name="-" class="minha__sacola__quantidade__botao">-</button><p class="minha__sacola__quantidade__valor">1</p><button type="radio" name="+" class="minha__sacola__quantidade__botao">+</button>
+                        <label for="quant">
+                            <input class="minha__sacola__quantidade__valor" type="number" min="1" max="99" size="60" name="qnt" id="qnt" value="1" />
+                        </label>
                     </div>
                 </div>
                 <div class="minha__sacola__subtotal__produto">
@@ -98,12 +109,18 @@
                         Tamanho escolhido
                     </h3>
                     <div class="minha__sacola__imagem__botao">
-                        <input class="minha__sacola__botao__tamanho" type="radio" name="tamanho" value="P">
-                        <label>P</label>
-                        <input class="minha__sacola__botao__tamanho" type="radio" name="tamanho" value="M">
-                        <label>P</label>
-                        <input class="minha__sacola__botao__tamanho" type="radio" name="tamanho" value="G">
-                        <label>P</label>
+                        <label class="minha__sacola__imagem__botao__input">
+                            <input class="minha__sacola__botao__tamanho" type="radio" name="tamanho" value="P">
+                            <span class="minha__sacola__botao__span">P</span>
+                        </label>
+                        <label class="minha__sacola__imagem__botao__input">
+                            <input class="minha__sacola__botao__tamanho" type="radio" name="tamanho" value="M">
+                            <span class="minha__sacola__botao__span">M</span>
+                        </label>
+                        <label class="minha__sacola__imagem__botao__input">
+                            <input class="minha__sacola__botao__tamanho" type="radio" name="tamanho" value="G">
+                            <span class="minha__sacola__botao__span">G</span>
+                        </label>
                     </div>
                 </div>
                 <div class="minha__sacola__valor__produto">
@@ -113,11 +130,13 @@
                     <P class="minha__sacola__produto__preco">R$ 39,99</p>
                 </div>
                 <div class="minha__sacola__quantidade__produto">
-                    <h3 class="minha__sacola__produto__titulo">
+                    <h3 class="minha__sacola__produto__titulo" for="quant">
                         Quantidade
                     </h3>
                     <div class="minha__sacola__botao__quantidade">
-                        <button class="minha__sacola__quantidade__botao">-</button><p class="minha__sacola__quantidade__valor">1</p><button class="minha__sacola__quantidade__botao">+</button>
+                        <label for="quant">
+                            <input class="minha__sacola__quantidade__valor" type="number" min="1" max="99" size="60" name="qnt" id="qnt" value="1" />
+                        </label>
                     </div>
                 </div>
                 <div class="minha__sacola__subtotal__produto">

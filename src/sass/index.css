@@ -271,6 +271,12 @@ a:hover,
   }
 }
 
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  .produto__lista__conteudo {
+    gap: 5em;
+  }
+}
+
 .produto__lista__imagem {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 2%;
@@ -287,29 +293,61 @@ a:hover,
   border: 1px solid #C4C4C4;
   display: -ms-grid;
   display: grid;
-  height: 42vh;
+  height: 56vh;
   margin: 0%;
   width: 17vw;
 }
 
 @media screen and (max-width: 576px) {
   .produto__lista__imagem__borda {
-    height: 45vh;
-    width: 47vw;
+    height: 50vh;
+    margin: 0%;
+    width: 40vw;
   }
 }
 
 @media screen and (min-width: 577px) and (max-width: 768px) {
   .produto__lista__imagem__borda {
-    height: 45vh;
-    width: 36vw;
+    height: 50vh;
+    width: 30vw;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  .produto__lista__imagem__borda {
+    height: 43vh;
+    width: 20vw;
   }
 }
 
 .produto__lista__imagem__tamanhos {
-  height: 220px;
+  height: 45vh;
   margin: 2%;
-  width: 220px;
+  width: 16vw;
+}
+
+@media screen and (max-width: 576px) {
+  .produto__lista__imagem__tamanhos {
+    height: 42vh;
+    margin: 2%;
+    width: 38vw;
+  }
+}
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  .produto__lista__imagem__tamanhos {
+    height: 42vh;
+    margin: 2%;
+    width: 28vw;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  .produto__lista__imagem__tamanhos {
+    height: 36vh;
+    margin: 2%;
+    width: 19vw;
+  }
 }
 
 .produto__lista__imagem__botao {
@@ -330,7 +368,7 @@ a:hover,
   border-radius: 15%;
   -ms-grid-column: 1;
   grid-column: 1;
-  height: 4vh;
+  height: 7vh;
   margin: 1%;
   width: 2vw;
 }
@@ -349,6 +387,14 @@ a:hover,
   }
 }
 
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  .produto__lista__imagem__botao__tamanho {
+    height: 5vh;
+    margin: 1%;
+    width: 3vw;
+  }
+}
+
 .produto__lista__texto {
   font-weight: 400;
   font-size: 2.9em;
@@ -364,12 +410,17 @@ a:hover,
   line-height: 0%;
   text-align: start;
   width: 100%;
-  margin-top: 0%;
 }
 
 @media screen and (max-width: 576px) {
   .produto__lista__preco {
     text-align: center;
+  }
+}
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  .produto__lista__preco {
+    margin-top: 40%;
   }
 }
 
@@ -387,7 +438,13 @@ a:hover,
   font-size: 1.7rem;
   height: 3vw;
   line-height: 6vh;
-  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 17vw;
 }
 
 @media screen and (max-width: 576px) {
@@ -411,12 +468,50 @@ a:hover,
   }
 }
 
+@media screen and (max-width: 576px) {
+  .produto__lista__botao__sacola {
+    height: 8vh;
+    line-height: 8vh;
+    width: 40vw;
+  }
+}
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  .produto__lista__botao__sacola {
+    width: 31vw;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  .produto__lista__botao__sacola {
+    width: 20vw;
+  }
+}
+
 .produto__lista__botao__svg {
   place-self: end;
   margin-top: 3%;
   min-block-size: -webkit-fit-content;
   min-block-size: -moz-fit-content;
   min-block-size: fit-content;
+}
+
+@media screen and (max-width: 576px) {
+  .produto__lista__botao__svg {
+    -ms-flex-item-align: normal;
+        -ms-grid-row-align: normal;
+        align-self: normal;
+    margin-top: 0%;
+  }
+}
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  .produto__lista__botao__svg {
+    -ms-flex-item-align: normal;
+        -ms-grid-row-align: normal;
+        align-self: normal;
+    margin-top: 0%;
+  }
 }
 
 .banner {

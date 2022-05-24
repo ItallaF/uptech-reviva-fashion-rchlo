@@ -66,15 +66,24 @@
         justify-content:center;
     }
 }
+.minha__sacola__imagem__botao__input {
+    cursor: pointer;
+}
 .minha__sacola__botao__tamanho {
-    width: 15%;
-    height: 5vh;
-
+    display: none;
+}
+.minha__sacola__botao__span {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-size: 1.6rem;
+    height: 3rem;
+    margin-right: 1rem;
+    width: 3rem;
     @include border__tamanho;
-    @media screen and (max-width: 576px){
-        height: 8vh;
-        width: 8vw;
-    }
+}
+.minha__sacola__botao__span:active {
+    color: black;
 }
 .minha__sacola__produto__preco {
     color: $color-preco;

@@ -2,10 +2,11 @@ const estoque = [{
   id: 1,
   nome: 'Camiseta Basic Soft Preto',
   url: 'https://www.riachuelo.com.br/camiseta-basic-soft-11535253_sku',
-  preco: 29.90,
+  preco: 39.90,
   descricao: 'A Camiseta Basic Soft Preto, é confeccionada em malha delicada. A peça possui tecido com leve transparência, tem modelagem assimétrica com parte frontal mais curta e acabamento sem costura. As blusas com corte à laser deixam o visual mais urbano e despojado. Combine com calças de sarja slim e tênis de alto para um visual cheio de estilo.',
   tamanhos_disponiveis: ['P', 'M', 'G'],
   quantidade_disponiveis: 15,
+  secao: 1,
   imagens: [
   { url: 'https://static.riachuelo.com.br/RCHLO/11535253001/portrait/5500a4b3f1969caace4af54076a086be83591913.jpg?imwidth=700',
     descricao: 'Camiseta Basic Soft Preto'
@@ -20,6 +21,7 @@ const estoque = [{
   descricao: 'Ideal para compor looks elegantes e fresquinhos, o Short Feminino Clochard Amarração Abstrato Preto AK by Riachuelo é a escolha perfeita para você! Confeccionado em viscose, o short conta com padronagem abstrata e pode ser combinado com o kimono da mesma estampa criando um visual incrível! Inspire-se!',
   tamanhos_disponiveis: ['P', 'M', 'G'],
   quantidade_disponiveis: 20,
+  secao: 1,
   imagens: [
   { url: 'https://static.riachuelo.com.br/RCHLO/14418436003/portrait/8d1a61026377358b3dda9f4f3bbbe0348fbdc2aa.jpg?imwidth=700',
     descricao: 'Short Feminino Clochard Amarração Abstrato Preto'
@@ -34,6 +36,7 @@ const estoque = [{
   descricao: 'Trazendo o frescor do verão em sua estampa, este Calça Feminina Pantalona Cintura Alta Amarração Linho Folhagem Branco AK by Riachuelo é um toque de estilo e feminilidade. Confeccionado em viscose com linho, ele possui modelagem ampla, dando um toque de conforto ao seu look. Experimente combinar com o top cropped e kimono criando um visual elegante e fashionista!',
   tamanhos_disponiveis: ['P', 'M', 'G'],
   quantidade_disponiveis: 25,
+  secao: 1,
   imagens: [
   { url: 'https://static.riachuelo.com.br/RCHLO/14419580001/portrait/742714c9654a097c6da7a05512b66521dcad621a.jpg?imwidth=700',
   descricao: 'Calça Feminina Pantalona Cintura Alta Amarração Linho '
@@ -48,6 +51,7 @@ const estoque = [{
   descricao: 'Em modelo sofisticado e super confortável, o Suéter Masculina Manga Longa Tricot Azul Escuro Pool by Riachuelo é a escolha certa para te acompanhar nos dias amenos e mais frios! Confeccionado em tricot, o suéter é ideal para combinar com calça jeans e tênis casual, aposte!',
   tamanhos_disponiveis: ['P', 'M', 'G'],
   quantidade_disponiveis: 35,
+  secao: 1,
   imagens: [
   { url: 'https://static.riachuelo.com.br/RCHLO/14387026002/portrait/56491dfb5db49bc817c150c3b8f742071de2549f.jpg?imwidth=700',
     descricao: 'Suéter Masculina Manga Longa Tricot Azul Escuro'
@@ -62,6 +66,7 @@ const estoque = [{
   descricao: 'A Camiseta é confeccionada em algodão e poliéster. Possui modelagem reta, manga curta, gola redonda e padronagem listrada. Ideal para usar em um barzinho com os amigos. Combine com uma calça de sarja e um tênis moderno.',
   tamanhos_disponiveis: ['P', 'M', 'G'],
   quantidade_disponiveis: 50,
+  secao: 2,
   imagens: [
   { url: 'https://static.riachuelo.com.br/RCHLO/11970979001/portrait/89022cd68aabf6e07193164b7a3af66763346c52.jpg?imwidth=700',
    descricao: 'Suéter Masculina Manga Longa Tricot Azul Escuro'
@@ -76,6 +81,7 @@ const estoque = [{
   descricao: 'Esta Blusa Feminina Manga Curta Onça Preto AK by Riachuelo é o toque de estilo que seu look casual precisa. Com modelagem ampla e decote redondo, ela é uma peça moderna e bem fácil de combinar. Combine com o velho bom jeans e arrase!',
   tamanhos_disponiveis: ['P', 'M', 'G'],
   quantidade_disponiveis: 100,
+  secao: 2,
   imagens: [
   { url: 'https://static.riachuelo.com.br/RCHLO/14518708001/portrait/cbd4163100bd3b8a210f475be7553581db402ac7.jpg?imwidth=700',
     descricao: 'Blusa Feminina Manga Curta Onça Preto'
@@ -90,6 +96,7 @@ const estoque = [{
   descricao: 'Com decote redondo e tecido macio e confortável, a Blusa de Moletom Feminina Manga Curta Animal Print Zebra Branco AK by Riachuelo dá um toque casual ao seu look do dia a dia. O diferencial fica por conta da estampa de zebra, dando mais estilo e detalhe a peça. Aposte!',
   tamanhos_disponiveis: ['P', 'M', 'G'],
   quantidade_disponiveis: 150,
+  secao: 2,
   imagens: [
   { url: 'https://static.riachuelo.com.br/RCHLO/14517736001/portrait/2008decddf20a922e8d12ad95aa1c37c6eced639.jpg?imwidth=700',
     descricao: 'Blusa de Moletom Feminina Manga Curta Animal Print Zebra Branco'
@@ -104,6 +111,7 @@ const estoque = [{
   descricao: 'Com design amplo e toque super macio, a Blusa Feminina Ampla Manga Curta Listrada Preto AK by Riachuelo é a escolha perfeita para completar seus looks casuais com muito estilo! Confeccionada em malha de viscose com elastano, a peça pode ser combinada com calça pantalona e sandália de salto quadrado para um visual elegante, aposte!',
   tamanhos_disponiveis: ['P', 'M', 'G'],
   quantidade_disponiveis: 45,
+  secao: 2,
   imagens: [
   { url: 'https://static.riachuelo.com.br/RCHLO/14517582002/portrait/cac5d2b3ea922d94ca17bdb6813a3129b1bdbfea.jpg?imwidth=700',
     descricao: 'Blusa Feminina Ampla Manga Curta Listrada Preto'
