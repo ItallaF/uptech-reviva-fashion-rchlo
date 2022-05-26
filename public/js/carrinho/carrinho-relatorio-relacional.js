@@ -6,7 +6,7 @@ function prduto(nomeProduto){
 
     var produtoDescricao  = [];
 
-    produtos.filter((_, indice) => produtos.includes(nomeProduto))
+    produtos.filter((_) => produtos.includes(nomeProduto))
     .map((nomeProduto, indiceAtual) => {
         if(!produtoDescricao.includes(nomeProduto) && produtoDescricao.includes(nomeProduto, indiceAtual + 1)){
             produtoDescricao.push(nomeProduto);

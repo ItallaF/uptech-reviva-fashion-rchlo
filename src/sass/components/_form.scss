@@ -1,33 +1,33 @@
 @import '../abstract/variaveis';
 
 .formulario {
-    display: flex;
-    justify-content: space-around;
-    margin: 0 0 0 4%;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 2rem;
+    margin: 2% 0 0 4%;
+    @media screen and (max-width: 576px) {
+        gap: 0rem;
+    }
 }
 .formulario__pesquisar {
     border: 1px solid $color_border;
-    font-size: 2.5em;
-    height: 128%;
-    margin: 1% 0 0 4%;
-    top: 40%;
-    width: 85%;
+    margin-right: 8px;
+    width: 85vw;
     @media screen and (max-width: 576px){
         height: 8vh;
-        width: 70%;
+        width: 78vw;
         font-size: 2.3em;
     }
     @media screen and (min-width: 577px) and (max-width: 768px){
         height: 8vh;
-        width: 80%;
+        width: 78vw;
     }
 }
 .formulario__botao__pesquisa {
     @include border__pesquisa;
     background: $color_text;
-    height: 130%;
-    margin: -1.6% 0 0 91%;
-    width: 6%;
+    width: 7vw;;
+    
     svg {
         color: $color_background;
         bottom: -0.01%;    
@@ -36,14 +36,10 @@
     }
     @media screen and (max-width: 576px){
         height: 8vh;
-        margin: 0 0 0 75%;
-        margin-top: -10%;
         width: 15vw;
     }
     @media screen and (min-width: 577px) and (max-width: 768px){
         height: 8vh;
-        margin: 0 0 0 85%;
-        margin-top: -8%;
         width: 13vw;
     }
 }

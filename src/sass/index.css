@@ -166,21 +166,28 @@ a:hover,
 .formulario {
   display: -ms-grid;
   display: grid;
+  -ms-grid-columns: 1fr auto;
+      grid-template-columns: 1fr auto;
+  gap: 2rem;
+  margin: 2% 0 0 4%;
+}
+
+@media screen and (max-width: 576px) {
+  .formulario {
+    gap: 0rem;
+  }
 }
 
 .formulario__pesquisar {
   border: 1px solid #C4C4C4;
-  font-size: 2.5em;
-  height: 128%;
-  margin: 1% 0 0 4%;
-  top: 40%;
-  width: 85%;
+  margin-right: 8px;
+  width: 85vw;
 }
 
 @media screen and (max-width: 576px) {
   .formulario__pesquisar {
     height: 8vh;
-    width: 70%;
+    width: 78vw;
     font-size: 2.3em;
   }
 }
@@ -188,7 +195,7 @@ a:hover,
 @media screen and (min-width: 577px) and (max-width: 768px) {
   .formulario__pesquisar {
     height: 8vh;
-    width: 80%;
+    width: 78vw;
   }
 }
 
@@ -196,9 +203,7 @@ a:hover,
   border: 1px solid #C4C4C4;
   border-radius: 1vh;
   background: #000000;
-  height: 130%;
-  margin: -1.6% 0 0 91%;
-  width: 6%;
+  width: 7vw;
 }
 
 .formulario__botao__pesquisa svg {
@@ -212,8 +217,6 @@ a:hover,
 @media screen and (max-width: 576px) {
   .formulario__botao__pesquisa {
     height: 8vh;
-    margin: 0 0 0 75%;
-    margin-top: -10%;
     width: 15vw;
   }
 }
@@ -221,8 +224,6 @@ a:hover,
 @media screen and (min-width: 577px) and (max-width: 768px) {
   .formulario__botao__pesquisa {
     height: 8vh;
-    margin: 0 0 0 85%;
-    margin-top: -8%;
     width: 13vw;
   }
 }
@@ -270,6 +271,12 @@ a:hover,
   }
 }
 
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  .produto__lista__conteudo {
+    gap: 5em;
+  }
+}
+
 .produto__lista__imagem {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 2%;
@@ -286,29 +293,61 @@ a:hover,
   border: 1px solid #C4C4C4;
   display: -ms-grid;
   display: grid;
-  height: 42vh;
+  height: 56vh;
   margin: 0%;
   width: 17vw;
 }
 
 @media screen and (max-width: 576px) {
   .produto__lista__imagem__borda {
-    height: 45vh;
-    width: 47vw;
+    height: 50vh;
+    margin: 0%;
+    width: 40vw;
   }
 }
 
 @media screen and (min-width: 577px) and (max-width: 768px) {
   .produto__lista__imagem__borda {
-    height: 45vh;
-    width: 36vw;
+    height: 50vh;
+    width: 30vw;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  .produto__lista__imagem__borda {
+    height: 43vh;
+    width: 20vw;
   }
 }
 
 .produto__lista__imagem__tamanhos {
-  height: 220px;
+  height: 45vh;
   margin: 2%;
-  width: 220px;
+  width: 16vw;
+}
+
+@media screen and (max-width: 576px) {
+  .produto__lista__imagem__tamanhos {
+    height: 42vh;
+    margin: 2%;
+    width: 38vw;
+  }
+}
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  .produto__lista__imagem__tamanhos {
+    height: 42vh;
+    margin: 2%;
+    width: 28vw;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  .produto__lista__imagem__tamanhos {
+    height: 36vh;
+    margin: 2%;
+    width: 19vw;
+  }
 }
 
 .produto__lista__imagem__botao {
@@ -329,7 +368,7 @@ a:hover,
   border-radius: 15%;
   -ms-grid-column: 1;
   grid-column: 1;
-  height: 4vh;
+  height: 7vh;
   margin: 1%;
   width: 2vw;
 }
@@ -348,6 +387,14 @@ a:hover,
   }
 }
 
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  .produto__lista__imagem__botao__tamanho {
+    height: 5vh;
+    margin: 1%;
+    width: 3vw;
+  }
+}
+
 .produto__lista__texto {
   font-weight: 400;
   font-size: 2.9em;
@@ -363,12 +410,17 @@ a:hover,
   line-height: 0%;
   text-align: start;
   width: 100%;
-  margin-top: 0%;
 }
 
 @media screen and (max-width: 576px) {
   .produto__lista__preco {
     text-align: center;
+  }
+}
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  .produto__lista__preco {
+    margin-top: 40%;
   }
 }
 
@@ -386,7 +438,13 @@ a:hover,
   font-size: 1.7rem;
   height: 3vw;
   line-height: 6vh;
-  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 17vw;
 }
 
 @media screen and (max-width: 576px) {
@@ -403,12 +461,57 @@ a:hover,
   }
 }
 
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  .produto__lista__botao__sacola {
+    height: 8vh;
+    line-height: 8vh;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .produto__lista__botao__sacola {
+    height: 8vh;
+    line-height: 8vh;
+    width: 40vw;
+  }
+}
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  .produto__lista__botao__sacola {
+    width: 31vw;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  .produto__lista__botao__sacola {
+    width: 20vw;
+  }
+}
+
 .produto__lista__botao__svg {
   place-self: end;
   margin-top: 3%;
   min-block-size: -webkit-fit-content;
   min-block-size: -moz-fit-content;
   min-block-size: fit-content;
+}
+
+@media screen and (max-width: 576px) {
+  .produto__lista__botao__svg {
+    -ms-flex-item-align: normal;
+        -ms-grid-row-align: normal;
+        align-self: normal;
+    margin-top: 0%;
+  }
+}
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  .produto__lista__botao__svg {
+    -ms-flex-item-align: normal;
+        -ms-grid-row-align: normal;
+        align-self: normal;
+    margin-top: 0%;
+  }
 }
 
 .banner {
@@ -425,13 +528,19 @@ a:hover,
 
 @media screen and (max-width: 576px) {
   .banner {
-    height: 26vw;
+    height: 26vh;
   }
 }
 
 @media screen and (min-width: 577px) and (max-width: 768px) {
   .banner {
-    height: 26vw;
+    height: 26vh;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  .banner {
+    height: 26vh;
   }
 }
 
@@ -450,14 +559,12 @@ a:hover,
 @media screen and (max-width: 576px) {
   .banner__conteudo__texto, .banner__conteudo__titulo {
     font-size: 2em;
-    margin: 8% 0 0 0;
   }
 }
 
 @media screen and (min-width: 577px) and (max-width: 768px) {
   .banner__conteudo__texto, .banner__conteudo__titulo {
     font-size: 2.5em;
-    margin: 10% 0 0 0;
   }
 }
 
@@ -476,14 +583,12 @@ a:hover,
 @media screen and (max-width: 576px) {
   .banner__conteudo__titulo {
     font-size: 2.2rem;
-    margin: .3% 0 0 0;
   }
 }
 
 @media screen and (min-width: 577px) and (max-width: 768px) {
   .banner__conteudo__titulo {
     font-size: 2.5rem;
-    margin: .3% 0 0 0;
   }
 }
 
@@ -507,7 +612,7 @@ a:hover,
   .banner__logo .logo__titulo {
     font-size: 2.2rem;
     line-height: 1.6vh;
-    margin: 21% 0 0 0;
+    margin: 20% 0 0 0;
   }
 }
 
@@ -515,7 +620,13 @@ a:hover,
   .banner__logo .logo__titulo {
     font-size: 2.5rem;
     line-height: 1.6vh;
-    margin: 23% 0 0 0;
+    margin: 14% 0 0 0;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  .banner__logo .logo__titulo {
+    margin: 13% 0 0 0;
   }
 }
 
