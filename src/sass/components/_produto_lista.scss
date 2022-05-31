@@ -30,6 +30,23 @@
         gap: 5em;
     }
 }
+
+.produto__lista__conteudo__verao {
+    display: grid;
+    gap: 10em;
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 95%;
+    @media screen and (max-width: 576px){
+        grid-template-columns: 1fr;
+    }
+    @media screen and (min-width: 577px) and (max-width: 768px){
+        grid-template-columns: repeat(2, 1fr);
+    }
+    @media screen and (min-width: 769px) and (max-width: 992px){
+        gap: 5em;
+    }
+}
+
 .produto__lista__imagem {
     flex: 1 1 2%;
     @media screen and (max-width: 576px){
