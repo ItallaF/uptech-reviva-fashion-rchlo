@@ -277,6 +277,35 @@ a:hover,
   }
 }
 
+.produto__lista__conteudo__verao {
+  display: -ms-grid;
+  display: grid;
+  gap: 10em;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  max-width: 95%;
+}
+
+@media screen and (max-width: 576px) {
+  .produto__lista__conteudo__verao {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  .produto__lista__conteudo__verao {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  .produto__lista__conteudo__verao {
+    gap: 5em;
+  }
+}
+
 .produto__lista__imagem {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 2%;
