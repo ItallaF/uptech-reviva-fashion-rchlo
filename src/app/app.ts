@@ -17,5 +17,5 @@ if(section){
     throw Error('Nãofoipossível iniciar a aplicação verifique se o for existe');
 }
 
-const product__list = new Control__Stock;
+const product__list = new Control__Index;
 console.log(product__list);

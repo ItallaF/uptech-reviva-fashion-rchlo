@@ -1,4 +1,4 @@
-const product__in__stock = JSON.parse(localStorage.getItem('produtos') || '');
+const product__in__stock = JSON.parse(localStorage.getItem('poduct__stock') || '');
 const displays__product = document.querySelectorAll(".produto__lista__conteudo");
 function create__div(product__list) {
     for (let counter = 0; counter < 4; counter++) {
@@ -35,7 +35,7 @@ function get__product(local, nome, preco, tamanhos_disponiveis, quantidade_dispo
         size__buttonP.setAttribute("type", "radio");
         size__buttonP.setAttribute("id", `tamanho-p-${index++}`);
         size__buttonP.setAttribute("name", `tamanhos_modelo-${index++}`);
-        size__buttonP.innerText = `${tamanhos_disponiveis[counter]}`;
+        size__buttonP.innerText = `p`;
         product__size.appendChild(size__buttonP);
     }
     const name__product = document.createElement("div");

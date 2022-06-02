@@ -2,7 +2,7 @@ import { product__image, product__stock, product__tamanho } from "./models/monta
 
 
 const product__in__stock: product__stock[] = 
-    JSON.parse(localStorage.getItem('produtos') || '');
+    JSON.parse(localStorage.getItem('poduct__stock') || '');
 
     
     const displays__product = document.querySelectorAll(".produto__lista__conteudo");
@@ -50,7 +50,7 @@ const product__in__stock: product__stock[] =
             size__buttonP.setAttribute("type", "radio");
             size__buttonP.setAttribute("id", `tamanho-p-${index++}`);
             size__buttonP.setAttribute("name", `tamanhos_modelo-${index++}`);
-            size__buttonP.innerText = `${tamanhos_disponiveis[counter]}`;
+            size__buttonP.innerText = `p`;
             product__size.appendChild(size__buttonP);
         }
     

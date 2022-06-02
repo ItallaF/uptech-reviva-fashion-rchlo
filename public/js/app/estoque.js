@@ -120,23 +120,30 @@ const product = [
         ],
     }
 ];
-const recive__product = JSON.parse(localStorage.getItem('poduct__stock') || '');
+//const recive__product = JSON.parse(localStorage.getItem('poduct__stock') || '');
 const upload__product = localStorage.setItem('poduct__stock', JSON.stringify(product));
-const product__local = product.forEach(element => {
+export {};
+/*
+  const product__local = product.forEach(element => {
     if (!recive__product.includes(element)) {
-        recive__product.push(element);
+        recive__product.push(element)
     }
 });
-const button__bag = document.querySelectorAll('.produto__lista__botao__sacola');
-button__bag.forEach((el, key) => el.addEventListener('click', event => remeove__product(key)));
-function remeove__product(id) {
-    if (recive__product[id].quantidade_disponivel <= 0) {
-        alert("Produto indisponivel");
-    }
-    else {
+
+  const button__bag = document.querySelectorAll('.produto__lista__botao__sacola');
+
+  button__bag.forEach((el, key) => el.addEventListener('click', event => remeove__product(key)));
+
+  function remeove__product(id: number) {
+    
+      if (recive__product[id].quantidade_disponivel <= 0) {
+        alert("Produto indisponivel")
+
+      } else {
         recive__product[id].quantidade_disponivel--;
         localStorage.setItem('produtos', JSON.stringify(recive__product));
         alert(recive__product[id].nome + " adicionado na sacola.");
-    }
-}
-export {};
+      }
+
+  }
+*/ 

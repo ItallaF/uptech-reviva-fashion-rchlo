@@ -123,11 +123,11 @@ const product: product__stock[] = [
   ],
   }];
 
-  const recive__product = JSON.parse(localStorage.getItem('poduct__stock') || '');
+  //const recive__product = JSON.parse(localStorage.getItem('poduct__stock') || '');
   
   const upload__product = localStorage.setItem('poduct__stock', JSON.stringify(product))
   
-
+/*
   const product__local = product.forEach(element => {
     if (!recive__product.includes(element)) {
         recive__product.push(element)
@@ -150,3 +150,4 @@ const product: product__stock[] = [
       }
 
   }
+*/

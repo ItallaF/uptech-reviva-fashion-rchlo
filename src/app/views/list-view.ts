@@ -7,7 +7,6 @@ import { View } from "./view.js";
 export class List__LaunchView extends View<Control__Stock>{
 
     template(model: Control__Stock, isSecondarylist?: boolean): string {
-        //const list = isSecondarylist?model.exibir().slice(4,8): model.exibir.slice(0,4)
         return `
             <div class="produto__lista__conteudo">
                 <section class="produto__lista__imagem">
